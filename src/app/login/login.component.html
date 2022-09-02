@@ -1,0 +1,40 @@
+<h2 align="center">Login</h2>
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+
+        <form [formGroup]="userForm" (ngSubmit)="login()">
+
+            Email: <input type="text" class="form-control" formControlName="email" />
+<span class="err"
+    *ngIf="userForm.get('email')?.touched  && userForm.get('email')?.hasError('required')">Please Enter
+    email</span><br><br>
+
+    Password: <input type="text" class="form-control" formControlName="password" />
+<span class="err"
+    *ngIf="userForm.get('password')?.touched  && userForm.get('password')?.hasError('required')">Please
+    Enter password</span><br><br>
+<!-- <span class="err"
+    *ngIf="userForm.get('password')?.touched && userForm.get('password')?.hasError('minlength')">
+    Password Must be in 8 length</span>
+<span class="err"
+    *ngIf="userForm.get('password')?.touched && userForm.get('password')?.hasError('strongPassword')">
+    Please Select Strong Password [include <br> 1) [ @ or $ or # ] <br>2) Upper Letter <br>3) Lower Letter ]
+</span><br><br> -->
+
+<button type="submit" class="btn btn-primary">Login</button><br><br>
+<a class="nav-link " routerLink="/signup" tabindex="-1" aria-disabled="true">signup</a>
+
+
+        <!-- Email: <input type="text" class="form-control" [(ngModel)]="email" /><br><br>
+        Password: <input type="text" class="form-control" [(ngModel)] ="password" /><br><br>
+
+        <button type="button" (click)="login()"  class="btn btn-primary">Login</button>
+        
+            <a class="nav-link " routerLink="/signup" tabindex="-1" aria-disabled="true">signup</a>
+            -->
+        </form>
+        </div>
+</div>
+
+
