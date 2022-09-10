@@ -1,0 +1,84 @@
+<p>edit-user-form works!</p>
+<h2 align ="center" class="upper">EditUser Detail</h2>
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+
+        <!-- FirstName:<input type="text" class="form-control" [(ngModel)]="firstName"/><br><br> -->
+        <form [formGroup]="userForm" (ngSubmit)="updateuser()">
+            FirstName: <input type="text" class="form-control" formControlName="firstName" value="{{this.firstName}}" />
+            <span class="err"
+                *ngIf="userForm.get('firstName')?.touched  && userForm.get('firstName')?.hasError('required')">Please
+                Enter FirstName</span>
+            <span class="err"
+                *ngIf="userForm.get('firstName')?.touched  && userForm.get('firstName')?.hasError('minlength')">FirstName
+                Should be in 3 length </span><br><br>
+
+
+                lastName: <input type="text" class="form-control" formControlName="lastName"  value="{{this.lastName}}"/>
+            <span class="err"
+                *ngIf="userForm.get('lastName')?.touched  && userForm.get('lastName')?.hasError('required')">Please
+                Enter FirstName</span>
+            <span class="err"
+                *ngIf="userForm.get('lastName')?.touched  && userForm.get('lastName')?.hasError('minlength')">FirstName
+                Should be in 3 length </span><br><br>
+
+
+                Mobile Number:<input type="text" class="form-control" formControlName="number"  value="{{this.number}}" />
+                <span class="err"
+                *ngIf="userForm.get('number')?.touched  && userForm.get('number')?.hasError('required')">Please
+                Enter Mobile Number</span>
+                <span class="err"
+                *ngIf="userForm.get('number')?.touched  && userForm.get('number')?.hasError('minlength')">Mobile Number
+                Minimum in 10 digit </span>
+                <span class="err"
+                *ngIf="userForm.get('number')?.touched  && userForm.get('number')?.hasError('maxlength')">Mobile Number
+                maximum in 10 digit </span><br><br>
+
+                Enter your Date:<input type="date" class="form-control" formControlName="date" value="{{this.date}}"/>
+                <span class="err"
+                *ngIf="userForm.get('date')?.touched  && userForm.get('date')?.hasError('required')">Please
+                Enter current Date</span><br><br>
+
+                Enter your pincode:<input type="text" class="form-control"  formControlName="pincode" value="{{this.pincode}}"/>
+                <span class="err"
+                *ngIf="userForm.get('pincode')?.touched  && userForm.get('pincode')?.hasError('required')">Please
+                Enter pincode</span>
+                <span class="err"
+                *ngIf="userForm.get('pincode')?.touched  && userForm.get('pincode')?.hasError('minlength')">pincode
+                Minimum in 6 digit </span>
+                <span class="err"
+                *ngIf="userForm.get('pincode')?.touched  && userForm.get('pincode')?.hasError('maxlength')">pincode
+                maximum in 6 digit </span><br><br>
+
+                Enter your Address:<input type="text" class="form-control"  formControlName="address" value="{{this.address}}"/><br><br>
+                <span class="err"
+                *ngIf="userForm.get('address')?.touched  && userForm.get('address')?.hasError('required')">Please
+                Enter Address</span>
+
+<!--                 
+                Enter your gender:<input type="radio" 
+                formControlName="gender"  Name="gender" value="male" >male
+                <input type="radio" formControlName="gender" Name="gender" value="female">Female<br><br>
+             -->
+              
+            <!-- Email:<input type="text" class="form-controller" [(ngModel)]="email"/><br><br> -->
+            Email: <input type="text" class="form-control" formControlName="email" value="{{this.email}}" />
+            <span class="err"
+                *ngIf="userForm.get('email')?.touched  && userForm.get('email')?.hasError('required')">Please Enter
+                email</span>
+                <span class="err"
+                *ngIf="userForm.get('email')?.touched  && userForm.get('email')?.hasError('pattern')">Please correct validation of 
+                email</span><br><br>
+
+
+            <!-- Password:<input type="text" class="form-control" [(ngModel)]="password"/><br><br> -->
+          
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            
+        </form>
+    </div>
+
+</div>

@@ -1,0 +1,196 @@
+<!-- leftbar-tab-menu -->
+<div class="left-sidebar">
+	<!-- LOGO -->
+	<div class="brand">
+		<a href="index.html" class="logo">
+			<span>
+				<img src="assets/images/logo-sm.png" alt="logo-small" class="logo-sm">
+			</span>
+			<span>
+				<img src="assets/images/logo.png" alt="logo-large" class="logo-lg logo-light">
+				<img src="assets/images/logo-dark.png" alt="logo-large" class="logo-lg logo-dark">
+				<h3>Gym Tracker</h3>
+			</span>
+		</a>
+	</div>
+	<div class="sidebar-user-pro media border-end">                    
+		<div class="position-relative mx-auto">
+			<img src="assets/images/users/user-8.jpg" alt="user" class="rounded-circle thumb-md">
+			<span class="online-icon position-absolute end-0"><i class="mdi mdi-record text-success"></i></span>
+		</div>
+		<div class="media-body ms-2 user-detail align-self-center">
+			<h5 class="font-14 m-0 fw-bold">Mr. Meet Modi </h5>  
+			<p class="opacity-50 mb-0">Meet@exemple.com</p>          
+		</div>                    
+	</div>
+	<div class="border-end">
+		<ul class="nav nav-tabs menu-tab nav-justified" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active" data-bs-toggle="tab" href="#Main" role="tab" aria-selected="true">M<span>ain</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-bs-toggle="tab" href="#Extra" role="tab" aria-selected="false">E<span>xtra</span></a>
+			</li>
+		</ul>
+	</div>
+	<!-- Tab panes -->
+
+	<!--end logo-->
+	<div class="menu-content h-100" data-simplebar>
+		<div class="menu-body navbar-vertical">
+			<div class="collapse navbar-collapse tab-content" id="sidebarCollapse">
+				<!-- Navigation -->
+				<ul class="navbar-nav tab-pane active" id="Main" role="tabpanel">
+					<li class="menu-label mt-0 text-primary font-12 fw-semibold">M<span>ain</span><br><span class="font-10 text-secondary fw-normal">Unique Dashboard</span></li>                    
+					<li class="nav-item">
+						<a class="nav-link" href="#sidebarAnalytics" data-bs-toggle="collapse" role="button"
+							aria-expanded="false" aria-controls="sidebarAnalytics">
+							<i class="ti ti-stack menu-icon"></i>
+							<span>Users</span>
+						</a>
+						<div class="collapse " id="sidebarAnalytics">
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a routerLink="/admin/viewuser" class="nav-link ">View User</a>
+								</li><!--end nav-item-->
+							</ul><!--end nav-->
+						</div><!--end sidebarAnalytics-->
+					</li><!--end nav-item-->
+
+					<li class="nav-item">
+						<a class="nav-link" href="#sidebarCrypto" data-bs-toggle="collapse" role="button"
+							aria-expanded="false" aria-controls="sidebarCrypto">
+							<i class="ti ti-currency-bitcoin menu-icon"></i>
+							<span>Diet</span>
+						</a>
+						<div class="collapse " id="sidebarCrypto">
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" routerLink="/admin/adddiet">Add Diet</a>
+								</li><!--end nav-item-->
+								<li class="nav-item">
+									<a class="nav-link" routerLink="/admin/listdiet">View Diet</a>
+								</li><!--end nav-item-->
+							</ul><!--end nav-->
+						</div><!--end sidebarCrypto-->
+					</li><!--end nav-item-->
+
+                    
+					<li class="nav-item">
+						<a class="nav-link" href="#sidebarCrypto" data-bs-toggle="collapse" role="button"
+							aria-expanded="false" aria-controls="sidebarCrypto">
+							<i class="ti ti-currency-bitcoin menu-icon"></i>
+							<span>Offer</span>
+						</a>
+						<div class="collapse " id="sidebarCrypto">
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" routerLink="/admin/offer">Add offer</a>
+								</li><!--end nav-item-->
+								<li class="nav-item">
+									<a class="nav-link" routerLink="#">View offer</a>
+								</li><!--end nav-item-->
+							</ul><!--end nav-->
+						</div><!--end sidebarCrypto-->
+					</li><!--end nav-item-->
+
+
+					<li class="nav-item">
+						<a class="nav-link" href="#sidebarCrypto2" data-bs-toggle="collapse" role="button"
+							aria-expanded="false" aria-controls="sidebarCrypto">
+							<i class="ti ti-currency-bitcoin menu-icon"></i>
+							<span>Diet</span>
+						</a>
+						<div class="collapse " id="sidebarCrypto">
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" routerLink="/admin/adddiet">Add Diet</a>
+								</li><!--end nav-item-->
+								<li class="nav-item">
+									<a class="nav-link" routerLink="/admin/listdiet">View Diet</a>
+								</li><!--end nav-item-->
+							</ul><!--end nav-->
+						</div><!--end sidebarCrypto-->
+					</li><!--end nav-item-->
+
+					<li class="nav-item">
+						<a class="nav-link" href="#sidebarCrypto1" data-bs-toggle="collapse" role="button"
+							aria-expanded="false" aria-controls="sidebarCrypto">
+							<i class="ti ti-currency-bitcoin menu-icon"></i>
+							<span>WorkOut</span>
+						</a>
+						<div class="collapse " id="sidebarCrypto1">
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" routerLink="/admin/addworkout">Add WorkOut</a>
+								</li><!--end nav-item-->
+								<li class="nav-item">
+									<a class="nav-link" routerLink="/admin/listworkout">View WorkOut</a>
+								</li><!--end nav-item-->
+							</ul><!--end nav-->
+						</div><!--end sidebarCrypto-->
+					</li><!--end nav-item-->
+				</ul>
+				<ul class="navbar-nav tab-pane" id="Extra" role="tabpanel">
+					<li>
+						<div class="update-msg text-center position-relative">
+							<button type="button" class="btn-close position-absolute end-0 me-2" aria-label="Close"></button>
+							<img src="assets/images/speaker-light.png" alt="" class="" height="110">
+							<h5 class="mt-0">Mannat Themes</h5>
+							<p class="mb-3">We Design and Develop Clean and High Quality Web Applications</p>
+							<a href="javascript: void(0);" class="btn btn-outline-warning btn-sm">Upgrade your plan</a>
+						</div>
+					</li>
+				</ul><!--end navbar-nav--->
+			</div><!--end sidebarCollapse-->
+		</div>
+	</div>    
+</div>
+<!-- end left-sidenav-->
+<!-- end leftbar-menu-->
+
+<!-- Top Bar Start -->
+<!-- Top Bar Start -->
+<div class="topbar">            
+	<!-- Navbar -->
+	<nav class="navbar-custom" id="navbar-custom">    
+		<ul class="list-unstyled topbar-nav float-end mb-0">
+			<li class="dropdown">
+				<a class="nav-link dropdown-toggle nav-user" data-bs-toggle="dropdown" href="#" role="button"
+					aria-haspopup="false" aria-expanded="false">
+					<div class="d-flex align-items-center">
+						<img src="assets/images/users/user-8.jpg" alt="profile-user" class="rounded-circle me-2 thumb-sm" />
+						<div>
+							<small class="d-none d-md-block font-11">Admin</small>
+							<span class="d-none d-md-block fw-semibold font-12">Meet Modi<i
+									class="mdi mdi-chevron-down"></i></span>
+						</div>
+					</div>
+				</a>
+				<div class="dropdown-menu dropdown-menu-end">
+				<a class="dropdown-item" href="pages-profile.html"><i class="ti ti-user font-16 me-1 align-text-bottom"></i> Profile</a>
+				<a class="dropdown-item" href="crypto-settings.html"><i class="ti ti-settings font-16 me-1 align-text-bottom"></i> Settings</a>
+				<div class="dropdown-divider mb-0"></div>
+				<a class="dropdown-item" href="auth-login.html"><i class="ti ti-power font-16 me-1 align-text-bottom"></i> Logout</a>
+			</div>
+			</li><!--end topbar-profile--> 
+		</ul><!--end topbar-nav-->
+
+		<ul class="list-unstyled topbar-nav mb-0">                        
+			<li>
+				<button class="nav-link button-menu-mobile nav-icon" id="togglemenu">
+					<i class="ti ti-menu-2"></i>
+				</button>
+			</li> 
+			<li class="hide-phone app-search">
+				<form role="search" action="#" method="get">
+					<input type="search" name="search" class="form-control top-search mb-0" placeholder="Type text...">
+					<button type="submit"><i class="ti ti-search"></i></button>
+				</form>
+			</li>                       
+		</ul>
+	</nav>
+	<!-- end navbar-->
+</div>
+<!-- Top Bar End -->
+<!-- Top Bar End -->

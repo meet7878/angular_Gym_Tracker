@@ -1,0 +1,64 @@
+<h2 align="center">PersonalDetail</h2>
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+
+        <form [formGroup]="userForm" (ngSubmit)="PersonalDetail()">
+            Enter Your Age:<input type="text" class="form-control" formControlName="age" />
+            <span class="err" *ngIf="userForm.get('age')?.touched && userForm.get('age')?.hasError('required')">please
+                Enter the age</span>
+            <span class="err" *ngIf="userForm.get('age')?.touched  && userForm.get('age')?.hasError('minlength')">Age
+                minimum Number
+                2 digit </span>
+            <span class="err" *ngIf="userForm.get('age')?.touched  && userForm.get('age')?.hasError('maxlength')">Age
+                Number
+                maximum in 2 digit </span><br><br>
+
+            Enter Your Weight:<input type="text" class="form-control" formControlName="weight" />
+            <span class="err"
+                *ngIf="userForm.get('weight')?.touched && userForm.get('weight')?.hasError('required')">please Enter the
+                Weight</span>
+
+            Enter Your Fat:<input type="text" class="form-control" formControlName="fat" />
+            <span class="err" *ngIf="userForm.get('fat')?.touched && userForm.get('fat')?.hasError('required')">please
+                Enter the Fat</span>
+
+            Enter Your chest:<input type="text" class="form-control" formControlName="chest" />
+            <span class="err"
+                *ngIf="userForm.get('chest')?.touched && userForm.get('chest')?.hasError('required')">please Enter the
+                Fat</span>
+
+                Enter Your height:<input type="text" class="form-control" formControlName="height" />
+                <span class="err"
+                    *ngIf="userForm.get('height')?.touched && userForm.get('height')?.hasError('required')">please Enter the
+                    height</span>
+
+            Enter Your arms:<input type="arms" class="form-control" formControlName="arms" />
+            <span class="err" *ngIf="userForm.get('arms')?.touched && userForm.get('arms')?.hasError('required')">please
+                Enter the arms</span>
+
+            Enter Your Purpose Enroll:<input type="arms" class="form-control" formControlName="goal" />
+            <span class="err"
+                *ngIf="userForm.get('goal')?.touched && userForm.get('goal')?.hasError('required')">please Enter
+                the Purpose Enroll</span>
+
+            Enter your deit:<input type="radio" formControlName="deit" Name="deit" value="veg">veg
+            <input type="radio" formControlName="deit" Name="deit" value="Non-veg">Non-veg<br><br>
+
+            Mobile Emergency Number:<input type="text" class="form-control" formControlName="emergencyNum" />
+            <span class="err"
+                *ngIf="userForm.get('emergencyNum')?.touched  && userForm.get('emergencyNum')?.hasError('required')">Please
+                Enter Mobile Number</span>
+            <span class="err"
+                *ngIf="userForm.get('emergencyNum')?.touched  && userForm.get('emergencyNum')?.hasError('minlength')">Mobile Number
+                Minimum in 10 digit </span>
+            <span class="err"
+                *ngIf="userForm.get('emergencyNum')?.touched  && userForm.get('emergencyNum')?.hasError('maxlength')">Mobile Number
+                maximum in 10 digit </span><br><br>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+    </div>
+</div>

@@ -9,9 +9,27 @@ import { AppComponent } from './app.component';
 import { SignupComponent } from './signup/signup.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
-import { HomeComponent } from './home/home.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { PersonaldetailComponent } from './personaldetail/personaldetail.component';
+import { HomeComponent } from './UserSide/home/home.component';
+import { DashboardComponent } from './Admin/dashboard/dashboard.component';
+import { PersonaldetailComponent } from './UserSide/personaldetail/personaldetail.component';
+import { UserlayoutComponent } from './UserSide/userlayout/userlayout.component';
+import { ViewUserComponent } from './Admin/view-user/view-user.component';
+import { EditUserFormComponent } from './Admin/edit-user-form/edit-user-form.component';
+import { ViewPersonalDetailComponent } from './Admin/view-personal-detail/view-personal-detail.component';
+import { OfferComponent } from './Admin/offer/offer.component';
+import { ViewofferComponent } from './UserSide/viewoffer/viewoffer.component';
+import { UserofferComponent } from './Admin/useroffer/useroffer.component';
+import { AddDietComponent } from './Admin/add-diet/add-diet.component';
+import { ViewDietComponent } from './Admin/view-diet/view-diet.component';
+import { ListDietComponent } from './Admin/list-diet/list-diet.component';
+import { EditDietComponent } from './Admin/edit-diet/edit-diet.component';
+import { AdminheaderComponent } from './Admin/adminheader/adminheader.component';
+import { AdminlayoutComponent } from './Admin/adminlayout/adminlayout.component';
+import { WorkoutAddComponent } from './Admin/workout-add/workout-add.component';
+import { WorkoutEditComponent } from './Admin/workout-edit/workout-edit.component';
+import { WorkoutListComponent } from './Admin/workout-list/workout-list.component';
+
+
 
 @NgModule({
   declarations: [
@@ -20,7 +38,24 @@ import { PersonaldetailComponent } from './personaldetail/personaldetail.compone
     LoginComponent,
     HomeComponent,
     DashboardComponent,
-    PersonaldetailComponent
+    PersonaldetailComponent,
+    UserlayoutComponent,
+    ViewUserComponent,
+    EditUserFormComponent,
+    ViewPersonalDetailComponent,
+    OfferComponent,
+    ViewofferComponent,
+    UserofferComponent,
+    AddDietComponent,
+    ViewDietComponent,
+    ListDietComponent,
+    EditDietComponent,
+    AdminheaderComponent,
+    AdminlayoutComponent,
+    WorkoutAddComponent,
+    WorkoutEditComponent,
+    WorkoutListComponent
+ 
   ],
   imports: [
     BrowserModule,

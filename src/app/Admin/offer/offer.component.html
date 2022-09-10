@@ -1,0 +1,36 @@
+<p>offer works!</p>
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+
+        <form [formGroup]="offerForm" (ngSubmit)="offerDetail()">
+            planName:<input type="text" class="form-control" formControlName="planName" />
+            <span class="err" *ngIf="offerForm.get('planName')?.touched && offerForm.get('planName')?.hasError('required')">please
+                Enter the planName</span>
+            <span class="err" *ngIf="offerForm.get('planName')?.touched  && offerForm.get('planName')?.hasError('minlength')">planName
+                minimum Number
+                2 digit </span>
+          
+
+            Enter Your planType:<input type="text" class="form-control" formControlName="planType" />
+            <span class="err"
+                *ngIf="offerForm.get('weight')?.touched && offerForm.get('weight')?.hasError('required')">please Enter the
+                planType</span>
+
+            Enter Your amount:<input type="text" class="form-control" formControlName="amount" />
+            <span class="err" *ngIf="offerForm.get('fat')?.touched && offerForm.get('fat')?.hasError('required')">please
+                Enter the amount</span>
+
+            Enter Your duration:<input type="text" class="form-control" formControlName="duration" />
+            <span class="err"
+                *ngIf="offerForm.get('chest')?.touched && offerForm.get('chest')?.hasError('required')">please Enter the
+                duration</span>
+
+              
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+    </div>
+</div>

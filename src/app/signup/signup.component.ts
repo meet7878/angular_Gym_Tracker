@@ -43,18 +43,7 @@ export class SignupComponent implements OnInit {
   signup(){
    
     console.log(this.userForm.value)
-    // console.log(this.firstName)
-    // console.log(this.email);
-    // console.log(this.password);
-    
-
-    // let user = {
-    //   "firstName":this.firstName,
-    //   "email": this.email,
-    //   "password": this.password,
-    //   "gender": "male",
-
-    // }
+   
     if(this.userForm.valid){
       this.sessionservice.signupApi(this.userForm.value).subscribe(res =>{
         if (res) {

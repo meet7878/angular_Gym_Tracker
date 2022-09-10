@@ -1,0 +1,73 @@
+<div class="row">
+    <div class="col-sm-12">
+        <div class="page-title-box">
+            <div class="float-end">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Unikit</a></li>
+                    <li class="breadcrumb-item"><a href="#">Tables</a></li>
+                    <li class="breadcrumb-item active">Editable</li>
+                </ol>
+            </div>
+            <h4 class="page-title">WorkOut Elements</h4>
+        </div>
+        <!--end page-title-box-->
+    </div>
+    <!--end col-->
+</div>
+<!-- end page title end breadcrumb -->
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">WorkOut List</h4>
+                <div class="mb-2">
+                    <button class="btn btn-outline-primary btn-sm mb-1 mb-xl-0" id="reactivity-add">Add New
+                        Row</button>
+                    <button class="btn btn-outline-primary btn-sm mb-1 mb-xl-0" id="reactivity-delete">Remove
+                        Row</button>
+                    <button class="btn btn-outline-primary btn-sm mb-1 mb-xl-0" id="reactivity-update">Update First
+                        Row Name</button>
+                </div>
+            </div>
+            <!--end card-header-->
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">WorkOut Details </h4>
+                        </div><!--end card-header-->
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table" id="datatable_1">
+                                    <thead class="thead-light">
+                                     
+                                        <th>WorkOut Id</th>
+                                        <th>Title</th>
+                                        <th>Warm Up</th>
+                                        <th>Exercise</th>
+                                        <th>Streching</th>
+                                        <th>Days</th>
+                                        <th>Action</th>
+                                      
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let w of workouts">
+                                            <td>{{w.workOutId}}</td>
+                                            <td>{{w.title}}</td>
+                                            <td>{{w.warmUp}}</td>
+                                            <td>{{w.exercise}}</td>
+                                            <td>{{w.streching}}</td>
+                                            <td>{{w.day}}</td>
+                                            <td><a class="fakelink" routerLink="/admin/editworkout/{{w.workOutId}}">Edit</a> |  
+                                                <span class="fakelink" (click)="deleteWorkout(w.workOutId)">Delete</span></td>
+                                        </tr>                                                                                     
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end col -->
+            </div> <!-- end row -->
+        </div>
+    </div> <!-- end col -->
+</div> <!-- end row -->

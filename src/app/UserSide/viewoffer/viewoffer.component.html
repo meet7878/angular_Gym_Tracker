@@ -1,0 +1,32 @@
+<p>viewoffer works!</p>
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+    
+       
+
+        <table class="table table-bordered">
+            <tr>
+                <th>OfferId</th>
+                <th>planName</th>
+                <th>PlanType</th>
+                <th>duration</th>  
+                <th>Amount</th>
+                <th>Action</th>
+                
+            </tr>
+
+           
+                <tr *ngFor="let o of offers">
+                    <td>{{o.offerId}}</td>
+                    <td>{{o.planType}}</td>
+                    <td>{{o.planName}}</td>
+                    <td>{{o.duration}}</td>
+                    <td>{{o.amount}}</td>
+                    <td class="fakeLink"><a (click)="addoffer(o.offerId)">AddOffer</a></td>
+            </tr>
+
+        </table>
+    </div>
+</div>

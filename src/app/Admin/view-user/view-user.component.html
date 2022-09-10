@@ -1,0 +1,45 @@
+<p>view-user works!</p>
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+    
+       
+
+
+        <table class="table table-bordered">
+            <tr>
+                <th>UserId</th>
+                <th>FirstName</th>
+                <th>lastName</th>  
+                <th>email</th>
+                <th>gender</th>
+                <th>Number</th>
+                <th>Address</th>
+                <th>pincode</th>
+                <th>Date</th>
+                <td>Action</td>
+
+            </tr>
+
+            <tr *ngFor="let u of users">
+                <td>{{u.userId}}</td>
+                <td>{{u.firstName}}</td>
+                <td>{{u.lastName}}</td>
+                <td>{{u.email}}</td>
+                <td>{{u.gender}}</td>
+                <td>{{u.number}}</td>
+                <td>{{u.address}}</td>
+                <td>{{u.pincode}}</td>
+                <td>{{u.Date}}</td>
+                <td> <a routerLink="/admin/edituser/{{u.userId}}">Edit</a> |
+                <a routerLink="/admin/ViewPersonalDetail/{{u.userId}}">ViewPersonalDetail</a>
+                |
+                <a routerLink="/admin/adminoffer/{{u.userId}}">view offer</a> 
+             </td>
+                
+                   
+            </tr>
+        </table>
+    </div>
+</div>
