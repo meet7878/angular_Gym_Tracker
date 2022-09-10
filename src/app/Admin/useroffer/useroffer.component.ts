@@ -40,6 +40,6 @@ duration:String=""
       this.duration = resp.offers.duration 
     },err=>{
       this.toastr.error("Invlid getpersonalofferApi Response")
-    })
+    })   
   }
 }
